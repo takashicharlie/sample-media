@@ -172,8 +172,8 @@ input[type="image"] {
 }
 
 .rank-posts__post__img {
-  width: 100px;
-  height: auto;
+  width: 60px;
+  height: 60px;
 }
 
 .rank-posts__post__img__share {
