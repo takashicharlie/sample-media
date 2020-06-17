@@ -1,0 +1,391 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ヘッダー */
+.header {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+  background: -moz-linear-gradient(left, #5b247a, #1bcedf);
+  background: -webkit-linear-gradient(left, #5b247a, #1bcedf);
+  background: linear-gradient(to right, #5b247a, #1bcedf);
+  color: black;
+  justify-content: space-between;
+  line-height: 50px;
+  position: relative;
+}
+
+.header__title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+/* 検索バー */
+.header__search {
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+input[type="search"] {
+  background-color: #fff;
+  height: 20px; 
+  width: 160px;
+  border-radius: 4px;
+  border: none;
+}
+
+input[type="image"] {
+  width: 15px;
+  height: 15px; 
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* ----トップ記事---- */
+.top-posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+/* トップ記事：記事ごと */
+.top-posts__post {
+  transition: opacity ease-in-out 1s;
+  cursor: pointer;
+  position: relative;
+  margin: 10px;
+}
+
+.top-posts--hidden {
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.top-posts__post__img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+.top-posts__post__title {
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 15px;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+/* ----最近の記事、記事ランキング---- */
+.content {
+  padding: 10px;
+}
+
+/* 最近の記事 */
+.latest-posts {
+  display: flex;
+  flex-wrap: wrap; 
+  height: auto;
+  background-color: #fff;
+  justify-content: center;
+}
+
+.latest-posts__post {
+  width: 190px;
+  height: 220px;
+  margin: 10px;
+  box-shadow: 0 0 2px gray;
+  cursor: pointer;
+  position: relative;
+}
+
+.latest-posts__post__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.latest-posts__post__img__title {
+  font-size: 12px;
+  color: #000;
+  margin-left: 3px;
+}
+
+.latest-posts__post__img__text {
+  margin: 3px 3px;
+  font-size: 10px;
+  color: grey;
+}
+
+.latest-posts__post__img__share {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.latest-posts__post__img__ribbon {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+/* 記事ランキング */
+
+.rank-posts {
+  padding: 20px;
+}
+
+.rank-posts__post {
+  display: flex;
+  font-size: 10px;
+  border-bottom: 2px solid #e8e8e8;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.rank-posts__post__img {
+  width: 100px;
+  height: auto;
+}
+
+.rank-posts__post__img__share {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.rank-posts__post__img__ribbon {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.rank-posts__post__text {
+  margin-left: 15px;
+}
+
+.rank-posts__post__text__office {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.rank-posts__post__text__industry {
+  color: grey;
+}
+
+.rank-posts__more {
+  font-size: 14px;
+  text-align: right;
+  color: grey;
+  margin-top: 10px;
+}
+
+/* その他の記事 */
+.other-posts {
+  background-color: #fff;
+  padding: 40px;
+}
+
+.other-posts__post {
+  border-bottom: 2px solid #e8e8e8;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.other-posts__post__title {
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: 2px;
+}
+
+.other-posts__post__text {
+  font-size: 12px;
+  color: grey;
+}
+
+.other-posts__post__ctgry {
+  font-size: 12px;
+  color: grey;
+}
+
+.other-posts__post__day {
+  font-size: 12px;
+  color: grey;
+}
+
+.other-posts__post__img__share {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.other-posts__post__img__ribbon {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+
+/* メインコンテンツ */
+  .main-wrapper {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* ----トップ記事---- */
+
+  .top-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .top-posts__post__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ----最近の記事、記事ランキング---- */
+  .content {
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    padding: 0 100px;
+  }
+
+  /* 最近の記事 */
+  .latest-posts {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 70%;
+    height: auto;
+    background-color: #fff;
+    justify-content: center;
+  }
+
+  .latest-posts__post {
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+  }
+
+  .latest-posts__post__img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .latest-posts__post__img__title {
+    font-size: 15px;
+    color: #000;
+    margin-left: 3px;
+  }
+
+  .latest-posts__post__img__text {
+    margin: 3px 3px;
+    font-size: 10px;
+    color: grey;
+  }
+
+  /* 記事ランキング */
+  .rank-posts {
+    width: 30%;
+    height: auto;
+  }
+
+  .rank-posts__post {
+    display: flex;
+    font-size: 10px;
+    border-bottom: 2px solid #e8e8e8;
+    padding: 10px;
+  }
+
+  .rank-posts__post__text {
+    margin-left: 15px;
+  }
+
+  .rank-posts__post__text__office {
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .rank-posts__post__text__industry {
+    color: grey;
+  }
+
+  .rank-posts__more {
+    font-size: 14px;
+    text-align: right;
+    color: grey;
+    margin-top: 10px;
+  }
+
+  /* その他の記事 */
+  .other-posts {
+    background-color: #fff;
+    padding: 100px;
+  }
+
+  .other-posts__post {
+    border-bottom: 2px solid #e8e8e8;
+  }
+
+  .other-posts__post__title {
+    font-size: 17px;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  .other-posts__post__text {
+    font-size: 12px;
+    color: grey;
+  }
+
+  .other-posts__post__ctgry {
+    font-size: 12px;
+    color: grey;
+  }
+
+  .other-posts__post__day {
+    font-size: 12px;
+    color: grey;
+  }
+}
