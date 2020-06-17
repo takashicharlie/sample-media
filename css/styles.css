@@ -81,6 +81,12 @@ input[type="image"] {
   opacity: 0;
 }
 
+.top-posts__post.top-posts--hidden > p {
+    color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
 .top-posts__post__img {
   width: 400px;
   max-width: 100%;
